@@ -18,7 +18,7 @@ def load_repository_paths():
             if path.exists() and path.is_dir():
                 repos.append(path)
             else:
-                print(f"Warning: Repository path {value} from {key} does not exist or is not a directory")
+                print(f"Oooops!!!: Repository path {value} from {key} does not exist or is not a directory")
     
     return repos
 

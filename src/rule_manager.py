@@ -6,6 +6,7 @@ from .repository import Repository
 class RuleManager:
     def __init__(self):
         self.repositories: Dict[Path, Repository] = {}
+        self.window = None  # Will be set later
     
     def add_repository(self, path: str):
         """Add a repository to manage."""
@@ -55,3 +56,6 @@ class RuleManager:
                 repo.commit_and_push(message)
             except git.GitCommandError as e:
                 print(f"Error pushing to repository {repo.path}: {e}")
+
+    def set_window(self, window):
+        self.window = window
