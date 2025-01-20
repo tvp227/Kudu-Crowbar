@@ -15,3 +15,4 @@
 -->
 
 python -m src.main
+![image](https://github.com/user-attachments/assets/bef53ed3-695a-49c8-871e-269e42ea4465)
